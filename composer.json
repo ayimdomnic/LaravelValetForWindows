@@ -1,0 +1,37 @@
+{
+    "name": "ayimdomnic/valetwindows",
+    "description": "I heard a macbook goes for 200k and I barely can't afford  the zendbook, lets see how well this may come",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Darth Vader",
+            "email": "ayimdomnic@outlook.com"
+        }
+    ],
+    "require": {
+        "php": "^5.6",
+        "illuminate/container": "^5.2",
+        "mnapoli/silly": "^1.3",
+        "nategood/httpful": "^0.2.20",
+        "tightenco/collect": "^5.2"
+    },
+    "reqiure-dev":{
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": ">=4.8.24"
+
+    },
+
+    "autoload": {
+        "files": [
+            "command/includes/compatibility.php",
+            "command/includes/facades.php",
+            "command/includes/helpers.php"
+        ],
+        "psr-4": {
+            "Valet\\": "command/Valet/"
+        },
+
+    "bin": [
+        "valet"
+    ]
+}
